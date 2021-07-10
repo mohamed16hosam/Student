@@ -231,13 +231,6 @@ void insertmid ()
 
 
 
-=======
-    }}
-   printList(head);
-    
-    
-    return 0;
-}
 
 
 

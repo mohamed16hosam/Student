@@ -404,7 +404,7 @@ int main()
             printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n");
             scanf(" %d",&x);
             } break ;}
-    case(3):{insertend() ;
+    case(3):{insertfinal() ;
     printf("If you want to choose any option from the above options press any number if not press zero\n");
     scanf(" %d",&w);
          if(w) {

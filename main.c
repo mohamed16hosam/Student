@@ -12,7 +12,7 @@ int stscore ; //student score of last year //
 
 struct Node {
     struct Node* next;//pointer to structure
-    struct Student student1;
+    struct student student1;
 };
 
 

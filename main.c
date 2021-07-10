@@ -389,7 +389,7 @@ int main()
     switch(x){
     case(1):insertbegin() ;break ;
     case(2):insertmid() ; break ;
-    case(3):insertend() ;break ;
+    case(3):insertfinal() ;break ;
 
     };
     for(int i=0;i<=N-1;i++) {

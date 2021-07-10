@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Student {
+struct student
+{
 char stname [20] ; //character array for student name //
 int stid ; //student id //
 int stbirthday ; //student birthday //
@@ -9,7 +10,6 @@ int stbirthmon ; //student birth month //
 int stbirthyear ; //student birth year //
 int stscore ; //student score of last year //
 };
-
 struct student *claass ; int N ;
 void makingdynamicarray ()
 {
@@ -95,19 +95,40 @@ void insertmid ()
 }
 
 int main()
-{   
-    printf("Welcome to our program\n") ;
-    int x ;
+{
+    printf("\t*This is Dynamic Array*\n") ;
+    int x ;int w ;
     printf("Enter the number of students :") ; scanf("%d" ,&N) ;
-    makingdynamicarray() ;
-    printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n") ;
+    makingdynamicarray() ;printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n") ;
     scanf("%d",&x) ;printf("\n\n") ;
+    while(w){
     switch(x){
-    case(1):insertbegin() ;break ;
-    case(2):insertmid() ; break ;
-    case(3):insertend() ;break ;
+    case(1):{insertbegin() ;
+    printf("If you want to choose any option from the above options press any number if not press zero\n");
+    scanf(" %d",&w);
+         if(w) {
+            printf("Choose one of the following options by entering the character beside it\n");
+            printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n");
+            scanf(" %d",&x);
+            } break ;}
+    case(2):{insertmid() ;
+    printf("If you want to choose any option from the above options press any number if not press zero\n");
+    scanf(" %d",&w);
+         if(w) {
+            printf("Choose one of the following options by entering the character beside it\n");
+            printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n");
+            scanf(" %d",&x);
+            } break ;}
+    case(3):{insertend() ;
+    printf("If you want to choose any option from the above options press any number if not press zero\n");
+    scanf(" %d",&w);
+         if(w) {
+            printf("Choose one of the following options by entering the character beside it\n");
+            printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n");
+            scanf(" %d",&x);
+            } break ;}
 
-    };
+    };}
     for(int i=0;i<=N-1;i++) {
         printf("The name of student %d ",(i+1));printf("is: %s \n",((claass[i])).stname) ;
         printf("The id of student %d ",(i+1));printf("is: %d \n",((claass[i])).stid) ;

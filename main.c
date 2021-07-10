@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Student {
+struct student {
 char stname [20] ; //character array for student name //
 int stid ; //student id //
 int stbirthday ; //student birthday //
@@ -222,7 +222,7 @@ int main()
  
     printf("Welcome to our program\n");
     printf("\t*THis is the linked list*\n");
-    printf("size of structure of data:%d\n",sizeof(struct Student));
+    printf("size of structure of data:%d\n",sizeof(struct student));
     printf("size of node :%d\n",sizeof(struct Node));
     struct Node* head = NULL;//pointer to linked list structure
     struct Node* tail = NULL;

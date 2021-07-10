@@ -380,18 +380,40 @@ int main()
 
     }}
     printList(head);
+    
     printf("\t*This is Dynamic Array*\n") ;
-    int x ;
+    int x ;int w ;
     printf("Enter the number of students :") ; scanf("%d" ,&N) ;
-    makingdynamicarray() ;
-    printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n") ;
+    makingdynamicarray() ;printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n") ;
     scanf("%d",&x) ;printf("\n\n") ;
+    while(w){
     switch(x){
-    case(1):insertbegin() ;break ;
-    case(2):insertmid() ; break ;
-    case(3):insertfinal() ;break ;
+    case(1):{insertbegin() ;
+    printf("If you want to choose any option from the above options press any number if not press zero\n");
+    scanf(" %d",&w);
+         if(w) {
+            printf("Choose one of the following options by entering the character beside it\n");
+            printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n");
+            scanf(" %d",&x);
+            } break ;}
+    case(2):{insertmid() ;
+    printf("If you want to choose any option from the above options press any number if not press zero\n");
+    scanf(" %d",&w);
+         if(w) {
+            printf("Choose one of the following options by entering the character beside it\n");
+            printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n");
+            scanf(" %d",&x);
+            } break ;}
+    case(3):{insertend() ;
+    printf("If you want to choose any option from the above options press any number if not press zero\n");
+    scanf(" %d",&w);
+         if(w) {
+            printf("Choose one of the following options by entering the character beside it\n");
+            printf("Press\n1)if you want to insert a student at the beginning\n2)if you want to insert at the middle\n3)if you want to insert at the end\n\n");
+            scanf(" %d",&x);
+            } break ;}
 
-    };
+    };}
     for(int i=0;i<=N-1;i++) {
         printf("The name of student %d ",(i+1));printf("is: %s \n",((claass[i])).stname) ;
         printf("The id of student %d ",(i+1));printf("is: %d \n",((claass[i])).stid) ;
@@ -400,7 +422,6 @@ int main()
         printf("The birth year of student %d ",(i+1));printf("is: %d \n",((claass[i])).stbirthyear) ;
         printf("The last year score of student %d ",(i+1));printf("is: %d \n\n",((claass[i])).stscore) ;
     }
-    
     return 0;
 }
 
